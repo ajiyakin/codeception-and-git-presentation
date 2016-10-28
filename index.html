@@ -1,142 +1,142 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>Codeception, Netbeans and Git</title>
+        <title>Codeception, Netbeans and Git</title>
 
-		<meta name="description" content="A slide for introducing Codeception and Git">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="A slide for introducing Codeception and Git">
+        <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="reveal">
+        <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
 
-				<!-- Git -->
-				<section>
-					<section>
-						<h1>Git</h1>
-						<h3>Version Control System</h3>
-						:)
-					</section>
+                <!-- Git -->
+                <section>
+                    <section>
+                        <h1>Git</h1>
+                        <h3>Version Control System</h3>
+                        :)
+                    </section>
 
-					<section>
-						<h2>Pengetahuan dasar tentang Git</h2>
-						<ul>
-							<li><b style="color: yellow;">Clone</b> - <span style="font-size: .6em">Unduh projek ke lokal</span></li>
-							<li><b style="color: yellow;">Remote</b> - <span style="font-size: .6em">Alamat server project</span></li>
-							<li><b style="color: yellow;">Branch</b> - <span style="font-size: .6em">Cabang (tempat) penyimpanan sementara</span></li>
-							<li><b style="color: yellow;">Pull</b> - <span style="font-size: .6em">Ambil perubahan terbaru <u>dan satukan dengan keadaan file sekarang</u></span></li>
-							<li><b style="color: yellow;">Fetch</b> - <span style="font-size: .6em">Ambil perubahan terbaru <u>dan satukan dengan keadaan file pada branch tertentu</u></span></li>
-							<li><b style="color: yellow;">Commit</b> - <span style="font-size: .6em">Simpan keadaan file sekarang pada branch lokal</span></li>
-							<li><b style="color: yellow;">Push</b> - <span style="font-size: .6em">Update server dengan keadaan file lokal saat ini</span></li>
-						</ul>
-					</section>
+                    <section>
+                        <h2>Pengetahuan dasar tentang Git</h2>
+                        <ul>
+                            <li><b style="color: yellow;">Clone</b> - <span style="font-size: .6em">Unduh projek ke lokal</span></li>
+                            <li><b style="color: yellow;">Remote</b> - <span style="font-size: .6em">Alamat server project</span></li>
+                            <li><b style="color: yellow;">Branch</b> - <span style="font-size: .6em">Cabang (tempat) penyimpanan sementara</span></li>
+                            <li><b style="color: yellow;">Pull</b> - <span style="font-size: .6em">Ambil perubahan terbaru <u>dan satukan dengan keadaan file sekarang</u></span></li>
+                            <li><b style="color: yellow;">Fetch</b> - <span style="font-size: .6em">Ambil perubahan terbaru <u>dan satukan dengan keadaan file pada branch tertentu</u></span></li>
+                            <li><b style="color: yellow;">Commit</b> - <span style="font-size: .6em">Simpan keadaan file sekarang pada branch lokal</span></li>
+                            <li><b style="color: yellow;">Push</b> - <span style="font-size: .6em">Update server dengan keadaan file lokal saat ini</span></li>
+                        </ul>
+                    </section>
 
-					<section>
-						<h2>File-file Penting di Git</h2>
-						<ul>
-							<li><b style="color: yellow;">.gitignore</b> - <span style="font-size: .6em">Acuhkan file yang terdaftar</span></li>
-							<li><b style="color: yellow;">.gitkeep</b> - <span style="font-size: .6em"><b>BUKAN</b> fitur dari Git, biasa digunakan untuk merekam folder kosong</span></li>
-							<li><b style="color: yellow;">.git/hooks/</b> - <span style="font-size: .6em">Script (bash) yang dijalankan setelah/sebelum operasi Git</span></li>
-						</ul>
-					</section>
-				</section>
+                    <section>
+                        <h2>File-file Penting di Git</h2>
+                        <ul>
+                            <li><b style="color: yellow;">.gitignore</b> - <span style="font-size: .6em">Acuhkan file yang terdaftar</span></li>
+                            <li><b style="color: yellow;">.gitkeep</b> - <span style="font-size: .6em"><b>BUKAN</b> fitur dari Git, biasa digunakan untuk merekam folder kosong</span></li>
+                            <li><b style="color: yellow;">.git/hooks/</b> - <span style="font-size: .6em">Script (bash) yang dijalankan setelah/sebelum operasi Git</span></li>
+                        </ul>
+                    </section>
+                </section>
 
-				<!-- Codeception -->
-				<section>
-					
-					<section>
-						<h1>Codeception</h1>
-						<p>Testing framework</p>
-					</section>
+                <!-- Codeception -->
+                <section>
+                    
+                    <section>
+                        <h1>Codeception</h1>
+                        <p>Testing framework</p>
+                    </section>
 
-					<section>
-						<h2>Testing Pardigms</h2>
-						<ul>
-							<li>Unit Tests</li>
-							<li>Functional Tests</li>
-							<li>Acceptance Tests</li>
-						</ul>
-					</section>
+                    <section>
+                        <h2>Testing Pardigms</h2>
+                        <ul>
+                            <li>Unit Tests</li>
+                            <li>Functional Tests</li>
+                            <li>Acceptance Tests</li>
+                        </ul>
+                    </section>
 
-				</section>
+                </section>
 
-				<section>
-					<h1>Netbeans</h1>
-					<p>Just an IDE... :)</p>
-				</section>
+                <section>
+                    <h1>Netbeans</h1>
+                    <p>Just an IDE... :)</p>
+                </section>
 
-				<section>
-					<pre>
+                <section>
+                    <pre>
  _____                         _______ _                 
 |  __ \                       |__   __(_)               
 | |  | | ___ _ __ ___   ___      | |   _ _ __ ___   ___ 
 | |  | |/ _ \ '_ ` _ \ / _ \     | |  | | '_ ` _ \ / _ \
 | |__| |  __/ | | | | | (_) |    | |  | | | | | | |  __/
 |_____/ \___|_| |_| |_|\___/     |_|  |_|_| |_| |_|\___|
-					</pre>
-				</section>
+                    </pre>
+                </section>
 
-			</div>
+            </div>
 
-		</div>
+        </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
 
-		<script>
+        <script>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
 
-		</script>
+        </script>
 
-	</body>
+    </body>
 </html>
