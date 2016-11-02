@@ -1,5 +1,7 @@
 # Presentation - Introduction to Codeception and Git
 
+Published at: https://ajiyakin.github.io/codeception-and-git-presentation/
+
 This presentations is forked from `reveal.js` project which is slide template
 based on JavaScript.
 
