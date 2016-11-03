@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Codeception, Netbeans and Git</title>
+
+        <meta name="description" content="A slide for introducing Codeception and Git">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <!-- Codeception -->
+                <section>
+
+                    <section>
+                        <h1>Codeception</h1>
+                        <p>Testing framework</p>
+                    </section>
+
+                    <section>
+                        <h2>Testing Pardigms</h2>
+                        <ul>
+                            <li><b style="color: yellow;">Unit Test</b> - <span style="font-size: .6em">Test sebagian kode sebelum digabung dengan kode lain</span></li>
+                            <li><b style="color: yellow;">Functional Tests</b> - <span style="font-size: .6em">Test tanpa server, termasuk memeriksa data di database</span></li>
+                            <li><b style="color: yellow;">Acceptance Tests</b> - <span style="font-size: .6em">Live test but with robot</span></li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section>
+                    <h1>Tools</h1>
+                    <ul>
+                        <li><a href="https://git-scm.com/downloads">Git</a></li>
+                        <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html">Java JDK</a></li>
+                        <li><a href="https://getcomposer.org/download/">Composer</a></li>
+                        <li><a href="http://docs.seleniumhq.org/download/">Selenium Standalone + Chrome WebDriver</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <pre>
+ _____                         _______ _
+|  __ \                       |__   __(_)
+| |  | | ___ _ __ ___   ___      | |   _ _ __ ___   ___
+| |  | |/ _ \ '_ ` _ \ / _ \     | |  | | '_ ` _ \ / _ \
+| |__| |  __/ | | | | | (_) |    | |  | | | | | | |  __/
+|_____/ \___|_| |_| |_|\___/     |_|  |_|_| |_| |_|\___|
+                    </pre>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
